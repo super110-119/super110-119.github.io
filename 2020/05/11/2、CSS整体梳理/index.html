@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>2、CSS整体梳理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="css整体梳理一、单位和样式表1.单位①px 像素         浏览器能识别的最小单位   ②% 百分比       基于父级 ③em                 基于自身的font-size，自身没有就会继承父级的font-size ④rem                基于html的font-size，整个页面的1rem的值是确定的 ⑤vw                   基于移">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2、CSS整体梳理">
+<meta property="og:url" content="http://yoursite.com/2020/05/11/2%E3%80%81CSS%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="css整体梳理一、单位和样式表1.单位①px 像素         浏览器能识别的最小单位   ②% 百分比       基于父级 ③em                 基于自身的font-size，自身没有就会继承父级的font-size ④rem                基于html的font-size，整个页面的1rem的值是确定的 ⑤vw                   基于移">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-11T12:43:43.399Z">
+<meta property="article:modified_time" content="2019-12-13T03:37:04.000Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,211 +154,262 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-2、CSS整体梳理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/1%E3%80%81HTML%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.407Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/1%E3%80%81HTML%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/">1、HTML的整体梳理</a>
+    <h1 class="article-title" itemprop="name">
+      2、CSS整体梳理
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/2%E3%80%81CSS%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" class="archive-article-date">
+        
+        <a href="/2020/05/11/2%E3%80%81CSS%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" class="archive-article-date">
   	<time datetime="2020-05-11T12:43:43.399Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/2%E3%80%81CSS%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/">2、CSS整体梳理</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="css整体梳理"><a href="#css整体梳理" class="headerlink" title="css整体梳理"></a>css整体梳理</h1><h3 id="一、单位和样式表"><a href="#一、单位和样式表" class="headerlink" title="一、单位和样式表"></a>一、单位和样式表</h3><h5 id="1-单位"><a href="#1-单位" class="headerlink" title="1.单位"></a>1.单位</h5><p>①px 像素         浏览器能识别的最小单位  </p>
+<p>②% 百分比       基于父级</p>
+<p>③em                 基于自身的font-size，自身没有就会继承父级的font-size</p>
+<p>④rem                基于html的font-size，整个页面的1rem的值是确定的</p>
+<p>⑤vw                   基于移动端开发，CSS3新增的单位，将可视窗口的宽度分为100等份   1vw=窗口宽度/100</p>
+<p>⑥vh                     ……………………………………………………………………….高……………………..   1vh = ………………….</p>
+<h5 id="2-样式表"><a href="#2-样式表" class="headerlink" title="2.样式表"></a>2.样式表</h5><p>①行内样式         不符合结构表现相分离的原则，尽量不用，优先级最高</p>
+<p>②内部样式表     写在style的标签内，style放在head内，优先级第二</p>
+<p>③外部样式表     写在.css文件内，在html用link标签引入 ，href后接路径，优先级第三，写项目都用外部样式表</p>
+<h3 id="二、选择器-–-找标签"><a href="#二、选择器-–-找标签" class="headerlink" title="二、选择器  – 找标签"></a>二、选择器  – 找标签</h3><h5 id="1-必须掌握的选择器"><a href="#1-必须掌握的选择器" class="headerlink" title="1.必须掌握的选择器"></a>1.必须掌握的选择器</h5><p>①通配*</p>
+<p>② 标签   类    id</p>
+<p>③并集   后代   子   兄弟</p>
+<p>④属性    属性=值</p>
+<p>⑤伪类   </p>
+<p>：hover      </p>
+<p>：focus</p>
+<p>：first-child</p>
+<p>：before</p>
+<p>：after</p>
+<p>：first-of-type</p>
+<p>：last-of-type</p>
+<p>：nth-child（数字）</p>
+<p>：empty</p>
+<p>：disabled</p>
+<p>：checked</p>
+<p>：selection  </p>
+<p>：required</p>
+<p>：valid</p>
+<p>：invalid</p>
+<h5 id="2-选择器的优先级"><a href="#2-选择器的优先级" class="headerlink" title="2.选择器的优先级"></a>2.选择器的优先级</h5><p>针对同一个标签上有多个选择器设置样式，针对同样的样式声明，谁的优先级更高就用哪一个</p>
+<p>选择器分值计算  </p>
+<p>标签 1分    类名 10   id 100分   行内1000   ！important是1000000分  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例子color:green!important;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
 
+
+<h3 id="三、字体样式"><a href="#三、字体样式" class="headerlink" title="三、字体样式"></a>三、字体样式</h3><h5 id="（一）分样式："><a href="#（一）分样式：" class="headerlink" title="（一）分样式："></a>（一）分样式：</h5><p>1.font-family:”宋体”;    字的类型     唯一值可以是汉字的，且值可以写多个</p>
+<p>2.font-weight：bold；字的粗细     取值 bold  bolder   100-900</p>
+<p>3.font-size：30px;       字的大小      取值是长度单位值    默认16px</p>
+<p>4.font-style：italic；   字的风格      取值italic表示斜体</p>
+<h5 id="（二）复合样式"><a href="#（二）复合样式" class="headerlink" title="（二）复合样式"></a>（二）复合样式</h5><p>font：风 粗 大 类；  注意顺序，还有大类必须写</p>
+<h3 id="四、文本样式"><a href="#四、文本样式" class="headerlink" title="四、文本样式"></a>四、文本样式</h3><h5 id="（一）颜色"><a href="#（一）颜色" class="headerlink" title="（一）颜色"></a>（一）颜色</h5><p>color：取值</p>
+<p>①英文颜色  如red</p>
+<p>②十六进制的值： 如#abcdef</p>
+<p>③三原色值rgb()：  rgb（231，39，145）</p>
+<p>④色调、饱和度、亮度hsl：hsl(218,45,34)</p>
+<h5 id="二-对齐方式"><a href="#二-对齐方式" class="headerlink" title="(二) 对齐方式"></a>(二) 对齐方式</h5><h5 id="1-水平方向："><a href="#1-水平方向：" class="headerlink" title="1.水平方向："></a>1.水平方向：</h5><p>text-align：取值  left（默认）   right     center</p>
+<h5 id="2-垂直方向："><a href="#2-垂直方向：" class="headerlink" title="2.垂直方向："></a>2.垂直方向：</h5><p>①line-height：取值  一行就和高一样  多行就用高/行数   还可用于调整行距</p>
+<p>②vertical-align: 取值   top（默认） middle 居中    bottom居下</p>
+<h5 id="3-首行缩进"><a href="#3-首行缩进" class="headerlink" title="3.首行缩进"></a>3.首行缩进</h5><p>text-indent:  取值是长度值   只针对第一行   如果要都缩进就用padding值处理</p>
+<h5 id="（三）文本装饰"><a href="#（三）文本装饰" class="headerlink" title="（三）文本装饰"></a>（三）文本装饰</h5><p>text-decoration：取值</p>
+<p>①underline  下划线</p>
+<p>②line-through 删除线</p>
+<p>③none    去掉装饰线   一般用于去除a的下划线</p>
+<h3 id="五、背景"><a href="#五、背景" class="headerlink" title="五、背景"></a>五、背景</h3><h4 id="（一）分样式"><a href="#（一）分样式" class="headerlink" title="（一）分样式"></a>（一）分样式</h4><h5 id="1-背景色-background-color：颜色取值"><a href="#1-背景色-background-color：颜色取值" class="headerlink" title="1. 背景色 background-color：颜色取值"></a>1. 背景色 background-color：颜色取值</h5><h5 id="2-背景图片路径-background-image：url-路径"><a href="#2-背景图片路径-background-image：url-路径" class="headerlink" title="2.背景图片路径 background-image：url(路径)"></a>2.背景图片路径 background-image：url(路径)</h5><h5 id="3-是否重复-background-repeat：no-repeat-repeat-x-repeat-y"><a href="#3-是否重复-background-repeat：no-repeat-repeat-x-repeat-y" class="headerlink" title="3.是否重复   background-repeat：no-repeat    repeat-x   repeat-y"></a>3.是否重复   background-repeat：no-repeat    repeat-x   repeat-y</h5><h5 id="4-定位-background-position-x轴-y轴-注意顺序"><a href="#4-定位-background-position-x轴-y轴-注意顺序" class="headerlink" title="4.定位   background-position: x轴  y轴    注意顺序"></a>4.定位   background-position: x轴  y轴    注意顺序</h5><h4 id="（二）复合样式-1"><a href="#（二）复合样式-1" class="headerlink" title="（二）复合样式"></a>（二）复合样式</h4><p>background：无顺序</p>
+<h4 id="（三）注意要点"><a href="#（三）注意要点" class="headerlink" title="（三）注意要点"></a>（三）注意要点</h4><ol>
+<li>路径要正确</li>
+<li>保证引背景图的标签可以设置宽高</li>
+<li>注意定位，会从大图中引入小图</li>
+</ol>
+<h3 id="六、行块-display–-标签的展示方式"><a href="#六、行块-display–-标签的展示方式" class="headerlink" title="六、行块  display– 标签的展示方式"></a>六、行块  display– 标签的展示方式</h3><h4 id="display取值"><a href="#display取值" class="headerlink" title="display取值"></a>display取值</h4><p>1.block   块级   显示</p>
+<p>2.inline-block   行块</p>
+<p>3.inline   行内</p>
+<p>4.table    表格</p>
+<p>5.flex      弹性盒子</p>
+<p>6.none    隐藏   且不占位置</p>
+<h3 id="七、布局"><a href="#七、布局" class="headerlink" title="七、布局"></a>七、布局</h3><h5 id="（一）整体布局思想"><a href="#（一）整体布局思想" class="headerlink" title="（一）整体布局思想"></a>（一）整体布局思想</h5><p>画布局图，一层一层的实现</p>
+<h5 id="（二）盒模型"><a href="#（二）盒模型" class="headerlink" title="（二）盒模型"></a>（二）盒模型</h5><p>width    height    margin    border     padding      box-sizing</p>
+<h5 id="（三）浮动"><a href="#（三）浮动" class="headerlink" title="（三）浮动"></a>（三）浮动</h5><p>float：left/right/none</p>
+<p>浮动结束要清除浮动：</p>
+<p>1.给父级设置定高</p>
+<p>2.在浮动结束的位置加 <div class="clear"></div>  ,在样式内加 .clear{clear:both;}</p>
+<p>3.父级无定高 ，加overflow:hidden</p>
+<h5 id="四-定位"><a href="#四-定位" class="headerlink" title="(四)定位"></a>(四)定位</h5><p>position：取值</p>
+<p>1.relative   相对定位    参照自身原来的位置     原位置保留     不脱离标准文档流</p>
+<p>2.fixed        固定定位    参照浏览器                     原位置消失     脱离标准文档流</p>
+<p>3.absolute  固定定位     子绝父相，没找到就参照浏览器       原位置消失     脱离标准文档流</p>
+<p>注意：定位不乱用</p>
+<h1 id="八、CSS-hack"><a href="#八、CSS-hack" class="headerlink" title="八、CSS hack"></a>八、CSS hack</h1><h3 id="（一）什么是CSS-hack"><a href="#（一）什么是CSS-hack" class="headerlink" title="（一）什么是CSS hack"></a>（一）什么是CSS hack</h3><p>由于不同厂商的流览器或某浏览器的不同版本（如IE6-IE11,Firefox/Safari/Opera/Chrome等），对CSS的支持、解析不一样，导致在不同浏览器的环境中呈现出不一致的页面展现效果。这时，我们为了获得统一的页面效果，就需要针对不同的浏览器或不同版本写特定的CSS样式，我们把这个针对不同的浏览器/不同版本写相应的CSS code的过程，叫做CSS hack!</p>
+<h3 id="（二）CSS-hack的原理"><a href="#（二）CSS-hack的原理" class="headerlink" title="（二）CSS hack的原理"></a>（二）CSS hack的原理</h3><p>由于不同的浏览器和浏览器各版本对CSS的支持及解析结果不一样，以及CSS优先级对浏览器展现效果的影响，我们可以据此针对不同的浏览器情景来应用不同的CSS。</p>
+<h3 id="（三）CSS-hack分类"><a href="#（三）CSS-hack分类" class="headerlink" title="（三）CSS hack分类"></a>（三）CSS hack分类</h3><p>CSS Hack大致有3种表现形式，CSS属性前缀法、选择器前缀法以及IE条件注释法（即HTML头部引用if IE）Hack，实际项目中CSS Hack大部分是针对IE浏览器不同版本之间的表现差异而引入的。</p>
+<ul>
+<li>属性前缀法(即类内部Hack)：例如 IE6能识别下划线”<em>“和星号” * “，IE7能识别星号” * “，但不能识别下划线”</em>“，IE6~IE10都认识”\9”，但firefox前述三个都不能认识。</li>
+<li>选择器前缀法(即选择器Hack)：例如 IE6能识别<em>html .class{}，IE7能识别</em>+html .class{}或者*:first-child+html .class{}。</li>
+<li>IE条件注释法(即HTML条件注释Hack)：针对所有IE(注：IE10+已经不再支持条件注释)： <!--[if IE]>IE浏览器显示的内容 <![endif]-->，针对IE6及以下版本： <!--[if lt IE 6]>只在IE6-显示的内容 <![endif]-->。这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都会生效。</li>
+</ul>
+<p>　　</p>
+<p>CSS hack书写顺序，一般是将适用范围广、被识别能力强的CSS定义在前面。</p>
+<h3 id="1-CSS-hack方式一：条件注释法"><a href="#1-CSS-hack方式一：条件注释法" class="headerlink" title="1. CSS hack方式一：条件注释法"></a>1. CSS hack方式一：条件注释法</h3><p>　</p>
+<p>这种方式是IE浏览器专有的Hack方式，微软官方推荐使用的hack方式。举例如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">只在IE下生效</span><br><span class="line">&lt;!--[if IE]&gt;</span><br><span class="line">这段文字只在IE浏览器显示</span><br><span class="line">&lt;![endif]--&gt;</span><br><span class="line"></span><br><span class="line">只在IE6下生效</span><br><span class="line">&lt;!--[if IE 6]&gt;</span><br><span class="line">这段文字只在IE6浏览器显示</span><br><span class="line">&lt;![endif]--&gt;</span><br><span class="line"></span><br><span class="line">只在IE6以上版本生效</span><br><span class="line">&lt;!--[if gte IE 6]&gt;</span><br><span class="line">这段文字只在IE6以上(包括)版本IE浏览器显示</span><br><span class="line">&lt;![endif]--&gt;</span><br><span class="line"></span><br><span class="line">只在IE8上不生效</span><br><span class="line">&lt;!--[if ! IE 8]&gt;</span><br><span class="line">这段文字在非IE8浏览器显示</span><br><span class="line">&lt;![endif]--&gt;</span><br><span class="line"></span><br><span class="line">非IE浏览器生效</span><br><span class="line">&lt;!--[if !IE]&gt;</span><br><span class="line">这段文字只在非IE浏览器显示</span><br><span class="line">&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-CSS-hack方式二：类内属性前缀法"><a href="#2-CSS-hack方式二：类内属性前缀法" class="headerlink" title="2. CSS hack方式二：类内属性前缀法"></a>2. CSS hack方式二：类内属性前缀法</h3><p>属性前缀法是在CSS样式属性名前加上一些只有特定浏览器才能识别的hack前缀，以达到预期的页面展现效果。</p>
+<h3 id="3-CSS-hack方式三：选择器前缀法"><a href="#3-CSS-hack方式三：选择器前缀法" class="headerlink" title="3. CSS hack方式三：选择器前缀法"></a>3. CSS hack方式三：选择器前缀法</h3><p>选择器前缀法是针对一些页面表现不一致或者需要特殊对待的浏览器，在CSS选择器前加上一些只有某些特定浏览器才能识别的前缀进行hack。</p>
+<p>目前最常见的是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">*html *前缀只对IE6生效</span><br><span class="line">*+html *+前缀只对IE7生效</span><br><span class="line">@media screen\9&#123;...&#125;只对IE6&#x2F;7生效</span><br><span class="line">@media \0screen &#123;body &#123; background: red; &#125;&#125;只对IE8有效</span><br><span class="line">@media \0screen\,screen\9&#123;body &#123; background: blue; &#125;&#125;只对IE6&#x2F;7&#x2F;8有效</span><br><span class="line">@media screen\0 &#123;body &#123; background: green; &#125;&#125; 只对IE8&#x2F;9&#x2F;10有效</span><br><span class="line">@media screen and (min-width:0\0) &#123;body &#123; background: gray; &#125;&#125; 只对IE9&#x2F;10有效</span><br><span class="line">@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) &#123;body &#123; background: orange; &#125;&#125; 只对IE10有效</span><br><span class="line">IE ： -ms-  火狐：-moz-  苹果和谷歌：-webkit-  opera：-o-</span><br></pre></td></tr></table></figure>
+
+<h3 id="（四）CSS-hack利弊"><a href="#（四）CSS-hack利弊" class="headerlink" title="（四）CSS hack利弊"></a>（四）CSS hack利弊</h3><p>一般情况下，我们尽量避免使用CSS hack，但是有些情况为了顾及用户体验实现向下兼容，不得已才使用hack。使用hack虽然对页面表现的一致性有好处，但过多的滥用会造成html文档混乱不堪，增加管理和维护的负担。应尽量少用、慎用hack，促使浏览器厂商的标准越来越趋于统一，顺利过渡到标准浏览器的主流时代。抛弃那些陈旧的IE hack，必将减轻我们编码的复杂度，少做无用功。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/11/2%E3%80%81CSS%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/2.1%E3%80%81CSS3%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.392Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/05/11/1%E3%80%81HTML%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          1、HTML的整体梳理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/11/2.1%E3%80%81CSS3%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2.1、CSS3的整体梳理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/2.1%E3%80%81CSS3%E7%9A%84%E6%95%B4%E4%BD%93%E6%A2%B3%E7%90%86/">2.1、CSS3的整体梳理</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/4%E3%80%81bootstrap/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.384Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/4%E3%80%81bootstrap/">4、bootstrap</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/3%E3%80%81js%E5%88%9D%E7%BA%A7%E7%94%A8%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.376Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/3%E3%80%81js%E5%88%9D%E7%BA%A7%E7%94%A8%E6%B3%95/">3、js初级用法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/3.1%E3%80%81js%E8%BF%9B%E9%98%B6/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.367Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/3.1%E3%80%81js%E8%BF%9B%E9%98%B6/">3.1、js进阶</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/11/%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-05-11T12:43:43.361Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/11/%E5%A4%8D%E4%B9%A0/">复习</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -377,8 +432,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
