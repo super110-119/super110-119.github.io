@@ -18,7 +18,7 @@
 <meta property="og:image" content="c:%5CUsers%5C%E5%88%98%E6%96%87%E5%BA%B7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589245992645.png">
 <meta property="og:image" content="c:%5CUsers%5C%E5%88%98%E6%96%87%E5%BA%B7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589246341041.png">
 <meta property="article:published_time" content="2020-05-12T06:59:53.962Z">
-<meta property="article:modified_time" content="2020-05-12T11:36:07.507Z">
+<meta property="article:modified_time" content="2020-05-13T12:56:51.762Z">
 <meta property="article:author" content="云烟成雨">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:%5CUsers%5C%E5%88%98%E6%96%87%E5%BA%B7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1589245992645.png">
@@ -205,7 +205,7 @@
         <h1 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h1><a id="more"></a>
 
 <hr>
-<p>title: 搭建hexo博客<br>top: 99<br>tag: 随笔</p>
+<p>title: 搭建hexo博客<br>top: 5</p>
 <hr>
 <h2 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a><strong>1、前言</strong></h2><p>​    <span style="color:red">作为一名 web 工作者来说，有一个自己的博客胜似一份好的简历，多说无益,来和我一起创造出一个属于自己的专属博客吧</span></p>
 <p>​    <strong>静态博客：</strong>是指 <span style='color:red'>没有后端数据库</span>的博客，所有文章都是以<span style='color:red'> 文件 </span>的形式存储，是一种 <span style='color:red'>纯前端</span> 的博客框架。</p>
@@ -247,6 +247,7 @@
 <h2 id="4、总结"><a href="#4、总结" class="headerlink" title="4、总结"></a>4、总结</h2><p>​    期间或许会有很多问题，会遗漏什么<br>但是呢，大不了可有删除了重新再来一此呢，总会成功的<br>而且这个框架使用的人还是挺多的，<br>一些问题网上会有解决办法的</p>
 <p><strong>让我们认识一下 hexo 的全局配置– _config.yaml</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line"># 站点标题</span><br><span class="line">title: DragonBaby308&#39;s Blog</span><br><span class="line"># 站点副标题</span><br><span class="line">subtitle: Fighting for BAT!</span><br><span class="line"># 站点描述</span><br><span class="line">description: 记住迄今为止每一次失败时有心无力的感受，“为了更美好的明天而战”。</span><br><span class="line"># 作者</span><br><span class="line">author: DragonBaby308</span><br><span class="line"># 语言——  请注意，官方语言包不再支持简体中文zh-Hans，而是统一采用了zh-CN</span><br><span class="line">language: zh-CN</span><br><span class="line"># 时区——默认是本地时区</span><br><span class="line">timezone:</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line"># 站点地址</span><br><span class="line">url: http:&#x2F;&#x2F;106.14.153.30</span><br><span class="line"># 站点root，如果网站存在子目录中，url设置为&#39;http:&#x2F;&#x2F;yoursite.com&#x2F;child&#39;，root设置为&#39;&#x2F;child&#x2F;&#39;</span><br><span class="line">root: &#x2F;</span><br><span class="line"># 生成固定链接的格式</span><br><span class="line">permalink: :title&#x2F;</span><br><span class="line">permalink_defaults:</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line"># 每页文章数——关闭分页：0</span><br><span class="line">per_page: 10</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line"># 主题</span><br><span class="line">theme: next</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line"># 部署配置</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@106.14.153.30:&#x2F;usr&#x2F;DragonBaby308&#x2F;repo&#x2F;blog.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -370,6 +371,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#搭建hexo博客"><span class="toc-number">1.</span> <span class="toc-text">搭建hexo博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、前言"><span class="toc-number">1.1.</span> <span class="toc-text">1、前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、安装"><span class="toc-number">1.2.</span> <span class="toc-text">2、安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-从安装-node-js-开始"><span class="toc-number">1.2.1.</span> <span class="toc-text">(1).    从安装 node.js 开始</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-通过-node-js-安装-hexo-框架"><span class="toc-number">1.2.2.</span> <span class="toc-text">(2). 通过 node.js 安装 hexo 框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-安装-hexo-激动的时刻"><span class="toc-number">1.2.3.</span> <span class="toc-text">(3). 安装 hexo (激动的时刻)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#i-创建目录"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">i. 创建目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ii-初始化博客"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">ii. 初始化博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iii-新建文章"><span class="toc-number">1.2.3.3.</span> <span class="toc-text">iii. 新建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iv-生成博客静态文件"><span class="toc-number">1.2.3.4.</span> <span class="toc-text">iv. 生成博客静态文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-启动博客"><span class="toc-number">1.2.3.5.</span> <span class="toc-text">v. 启动博客</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、部署"><span class="toc-number">1.3.</span> <span class="toc-text">3、部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-生成github-io仓库"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 生成github.io仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-本地安装Hexo的git部署插件"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 本地安装Hexo的git部署插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-本地修改-config-yaml文件"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. 本地修改_config.yaml文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-部署"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. 部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-写文章-amp-发布"><span class="toc-number">1.3.5.</span> <span class="toc-text">5. 写文章 &amp; 发布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、总结"><span class="toc-number">1.4.</span> <span class="toc-text">4、总结</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -403,6 +417,11 @@
 </footer>
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+# PV方式，单个用户连续点击 n 篇，记录 n 次记录值
+<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+# UV方式，单个用户连续点击 n 篇，记录 1 次记录值
+<span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
 
     </div>
     <script>
